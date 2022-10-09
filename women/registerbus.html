@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title></title>
+  <link rel="stylesheet" href="../css/style1.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<html lang="en">
+<head>
+  <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+  </head>
+
+<body>
+<div id="form">
+  <div class="container">
+    <div class="col-lg-6 col-lg-offset-3 col-md-6 col-md-offset-3 col-md-8 col-md-offset-2">
+      <div id="userform">
+        <ul class="nav nav-tabs nav-justified" role="tablist">
+          <li><a href="#signup"  role="tab" data-toggle="tab">Register your Businesses</a></li>
+
+        </ul>
+        <div class="tab-content">
+          <div class="tab-pane fade active in" id="signup">
+            <h2 class="text-uppercase text-center"></h2>
+            <form id="signup" action="registerBusiness.php" method="post">
+              <div class="row">
+                
+                <div class="col-xs-12 col-sm-6">
+                  
+                  <div class="form-group">
+                    <label><font size="3px"></font><span class="req"></span> </label><br>
+                    <input type="text" class="form-control" id="b_name" name="b_name" placeholder="Enter Business Name" required data-validation-required-message="Please enter your First name." autocomplete="off">
+                    <p class="help-block text-danger"></p>
+                  </div>
+                </div>
+                <!-- <div class="col-xs-12 col-sm-6">
+                  <div class="form-group">
+                    <label><font size="3px"></font><span class="req"></span> </label>
+                    <input type="text" class="form-control" id="b_owner" name="b_owner" placeholder="Enter Business Onwer Name" required data-validation-required-message="Please enter your Last name." autocomplete="off">
+                    <p class="help-block text-danger"></p>
+                  </div>
+                </div> -->
+              </div>
+	          <div class="form-group">
+                <label><font size="3px"></font><span class="req"></span> </label>
+                <input type="txt" class="form-control" id="b_info" name="b_info" placeholder="Enter Business Infomation" required data-validation-required-message="Please enter your phone number." autocomplete="off">
+                <p class="help-block text-danger"></p>
+              </div>
+              <div class="form-group">
+                <label><font size="3px"></font><span class="req"></span> </label>
+                <input type="txt" class="form-control" id="b_email" name="b_email" placeholder="Enter Business Email" required data-validation-required-message="Please enter your password" autocomplete="off">
+                <p class="help-block text-danger"></p>
+              </div>
+              <div class="form-group">
+                <label><font size="3px"></font><span class="req"></span> </label>
+                <input type="tel" class="form-control" id="b_mobile" name="b_mobile" placeholder="Enter Business owner Phone No" required data-validation-required-message="Please enter your phone number." autocomplete="off">
+                <p class="help-block text-danger"></p>
+              </div>
+				<div class="form-group">
+                <label><font size="3px"></font><span class="req"></span> </label>
+                <input type="tel" class="form-control" id="b_bio" name="b_bio" placeholder="Enter Business Biodata" required data-validation-required-message="Please enter your phone number." autocomplete="off">
+                <p class="help-block text-danger"></p>
+              </div>      
+			  <br>
+			  <div class="input-box">
+			<span class="details"></span>
+			<select class="input-box" style =" Width:100%;height: 45px;border: 1px solid #FFFFFF;"  name="b_type">
+			<option value="none">Select Business Type</option>
+			<option value="Food & snacks">Food & snacks</option>
+			<option value="Sweets">Sweets</option>
+			<option value="Craft">Craft</option>
+			<option value="Art">Art</option>
+			<option value="Papads">Papads</option>
+			<option value="Home decor">Home decor</option>
+			<option value="Choclates">Choclates</option>
+			<option value="mukhWas">mukhWas</option>
+			<option value="Organic & Vegan">Organic & Vegan</option>
+			<option value="Pickles,Masala & Chutneys">Pickles,Masala & Chutneys</option>
+			<option value="Beauty & health">Beauty & health</option>
+   		</select>
+		</div>
+			  <br>
+			<div class="buttons">
+
+            <div class="action_btn">
+
+            <button name="submit" class="action_btn submit" width="100%" type="submit" value="Save" onclick="myFunction()">Save</button>
+            <!-- <button name="submit" class="action_btn cancel" width="200px" type="submit" value="Cancel" onclick="myFunction2()">Skip</button> -->
+
+            <p id="saved"></p>
+
+            </div>
+		<!-- /.container --> 
+</div>
+<script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+</body>
+<!-- partial -->
+  <script  src="./script.js"></script>
+
+</body>
+</html>
